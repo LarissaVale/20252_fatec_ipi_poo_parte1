@@ -3,14 +3,18 @@ public class TesteLivroDeNotas{
         //para construir um objeto se usa o new(instanciar objeto)
         String disciplina1 = "POO";
         String disciplina2 = "PEM";
-        LivroDeNotas livro1 = new LivroDeNotas();
+        
+        LivroDeNotas livro1 = new LivroDeNotas(disciplina1);
         //livro1.disciplina = disciplina1;
-        livro1.setDisciplina(disciplina)
+        //livro1.setDisciplina(disciplina1);
         livro1.exibirMensagem();
-        LivroDeNotas livro2 = new LivroDeNotas();
+        
+        LivroDeNotas livro2 = new LivroDeNotas(disciplina2);
         //livro2.disciplina = disciplina2;
-        livro2.setDisciplina(disciplina)
+        //livro2.setDisciplina(disciplina2);
+        System.out.println(livro2.getDisciplina());
         livro2.exibirMensagem();
+        
         //livro1 = livro2;
     }
 }
